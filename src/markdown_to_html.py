@@ -1,5 +1,5 @@
 
-from blocks import markdown_to_blocks, block_to_block_type
+from blocks import markdown_to_blocks, block_to_block_type, BlockType
 from htmlnode import HTMLNode, ParentNode
 from convert_node import text_node_to_html_node
 from split import text_to_textnodes
@@ -22,8 +22,10 @@ def markdown_to_html_node(markdown):
     final_children = []
     for block in blocks:
         block_type = block_to_block_type(block)
-        if block_type == "paragraph":
-            children = text_to_children(block)
+        if block_type == BlockType.PARAGRAPH:
+            normalized = block.replace("\n", " ")
+            normalized = re.sub(r"\s+", " ", normalized).strip()
+            children = text_to_children(normalized)
             html_node = ParentNode("p", children)
         elif block_type == "heading":
             level = 0
@@ -64,10 +66,18 @@ def markdown_to_html_node(markdown):
                 li_nodes.append(ParentNode("li", cleaned_line_node))
             html_node = ParentNode("ol", li_nodes)
         elif block_type == "code":
-            text_node = TextNode("block", TextType.CODE)
-            html_node = ParentNode("code", text_node_to_html_node(text_node))
+            lines = block.split("\n") 
+            inner_lines = lines[1:-1]
+            new_block = "\n".join(inner_lines)
+            text_node = TextNode(new_block, TextType.TEXT)
+            code_child = text_node_to_html_node(text_node)
+            code_node = ParentNode("code", [code_child])
+            html_node = ParentNode("pre", [code_node])
+        else:
+            raise Exception(f"Unknown block type: {block_type}")
         print(final_children)
         final_children.append(html_node)
+
     return ParentNode("div", final_children)
         
 
