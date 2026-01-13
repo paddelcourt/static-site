@@ -1,1 +1,1 @@
-python3 src/main.py "/paddlecourt/static-site/"
+python3 src/main.py "/static-site/"
