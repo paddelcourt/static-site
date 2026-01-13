@@ -53,8 +53,9 @@ def generate_page(from_path, template_path, dest_path):
     title = extract_title(read_markdown)
     read_template = read_template.replace("{{ Title }}", title)
     read_template = read_template.replace("{{ Content }}", html_file)
-    read_template = read_template.replace('href="/', f'href="{BASE_DIR}')
-    read_template = read_template.replace('src="/', f'src="{BASE_DIR}')
+    base_url = sys.argv[1]
+    read_template = read_template.replace('href="/', f'href="{base_url}')
+    read_template = read_template.replace('src="/', f'src="{base_url}')
 
     dest_dir = os.path.dirname(dest_path_abs)
     if not os.path.isdir(dest_dir):
