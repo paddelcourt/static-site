@@ -30,7 +30,7 @@ def block_to_block_type(block):
          return BlockType.CODE
     
     new_block = block.split("\n")
-    if all(i.startswith("> ") for i in new_block):
+    if all(i.startswith(">") for i in new_block):
         return BlockType.QUOTE
     elif all(i.startswith("- ") for i in new_block):
         return BlockType.UNORDERED_LIST

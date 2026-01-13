@@ -41,6 +41,8 @@ def markdown_to_html_node(markdown):
             for line in lines:
                 if line.startswith("> "):
                     line = line[2:]
+                elif line.startswith(">"):
+                    line = line[1:]
                 cleaned_lines.append(line)
             cleaned_text = " ".join(cleaned_lines)
             children = text_to_children(cleaned_text)
