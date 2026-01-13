@@ -2,6 +2,7 @@ import os
 import shutil
 import re
 from markdown_to_html import markdown_to_html_node
+import sys
 
 
 def static_to_public(static_directory, public_directory):
@@ -52,6 +53,8 @@ def generate_page(from_path, template_path, dest_path):
     title = extract_title(read_markdown)
     read_template = read_template.replace("{{ Title }}", title)
     read_template = read_template.replace("{{ Content }}", html_file)
+    read_template = read_template.replace('href="/', f'href="{BASE_DIR}')
+    read_template = read_template.replace('src="/', f'src="{BASE_DIR}')
 
     dest_dir = os.path.dirname(dest_path_abs)
     if not os.path.isdir(dest_dir):

@@ -1,0 +1,1 @@
+python3 src/main.py "/paddlecourt/static-site/"
