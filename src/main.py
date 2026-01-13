@@ -1,8 +1,9 @@
-from textnode import TextNode, TextType
+from website import static_to_public, generate_page
 
 
 def main():
-    textnode = TextNode("This is some anchor text", TextType.TEXT, "https://www.boot.dev")
-    print(textnode)
+    static_to_public("static", "public")
+    generate_page("content/index.md", "template.html","public/index.html")
+
 
 main()
