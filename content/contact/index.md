@@ -2,8 +2,5 @@
 
 [< Back Home](/)
 
-Give me a call anytime to chat about Tolkien!
 
-`555-555-5555`
-
-**"Váya márië."**
+Find me on [LinkedIn](https://www.linkedin.com/in/tom-m-651241167/) and [GitHub](https://github.com/paddelcourt)
