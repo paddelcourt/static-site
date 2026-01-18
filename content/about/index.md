@@ -4,15 +4,16 @@
 ![Hokkaido University](/images/hokkaido_university.jpeg)
 
 
-Hi, I'm Tom. I worked as a Strategy and Operations Manager at Revolut and Bizops at Truth Systems. In another life I studied economics and finance and did summer internships at investment banks. I enjoy travelling to Japan every year and taking photos (the photo above was taken at Hokkaido University, the most beautiful campus I've ever seen), and having been putting on and off learning the language.  
+I'm Tom and this is my static blog. 
 
 
-My current favorite tv shows are "The Bear", "Culinary Class Wars" and "Frieren". I had the opportunity to do my masters in Japan and decided against it to pursue a career in startups, and sometimes I still think about it. I'm focused on data engineering (python/sql), AI engineering with typescript, growth engineering, and inference/training economics.
+I previously worked as a Strategy and Operations Manager at Revolut and short stint as Founding Bizops/Data at Truth Systems. I primarily focused on on building data pipelines, scaleable processes and growth engineering. 
+
+
+I enjoy travelling to Japan every year and taking photos (the photo above was taken at Hokkaido University), and having been putting on and off learning the language. I also like to make espressos with beans roasted from around the world (currently enjoying beans from Volca who are based in Stockholm).
 
 
 
 ## Get in Touch
 
-Feel free to reach out if you'd like to connect or discuss any of my posts.
-
-[Contact me](/contact)
+Find me on [LinkedIn](https://www.linkedin.com/in/tom-m-651241167/) and [GitHub](https://github.com/paddelcourt)
