@@ -4,7 +4,7 @@
 ![Hokkaido University](/images/hokkaido_university.jpeg)
 
 
-I'm Tom and this is my static blog. I'm currently working on [The Receivables Company](https://www.thereceivables.com/). Having seen and talked with a lot of people stuck doing manual work to collect cash that should have been paid, I figured how hard could it be to automate it.
+I'm Tom and this is my static blog. I'm currently working at Vinny as Operations Manager, a startup focusing on AI for property management. This came right after my property management startup Ibasho had shutdown, and now I am continuing where I left off.
 
 
 I previously worked as a Strategy and Operations Manager at Revolut, Bizops at Truth Systems (YC S25) and before that worked briefly as a credit analyst at an investment bank. I primarily focused on on building data pipelines, scaleable processes and growth engineering. 
